@@ -1,11 +1,11 @@
 {
-    "name": "markdown-writer-theme",
+    "name": "micimize-markdown-writer-theme",
     "displayName": "Markdown Writer Theme",
-    "description": "Minimalist themes for writing markdown",
+    "description": "Minimalist themes for writing markdown. Fork of original markdown-writer-theme",
     "version": "0.1.11",
     "publisher": "mgmeyers",
     "repository": {
-        "url": "https://github.com/mgmeyers/vscode-markdown-writer-theme.git",
+        "url": "https://github.com/micimize/vscode-markdown-writer-theme.git",
         "type": "git"
     },
     "license": "MIT",
@@ -16,8 +16,7 @@
         "Themes"
     ],
     "activationEvents": [
-        "*",
-        "onCommand:markdown-writer-theme.update"
+        "onStartupFinished"
     ],
     "main": "./dist/extension.js",
     "contributes": {
@@ -97,7 +96,7 @@
         }
     },
     "scripts": {
-        "vscode:prepublish": "webpack --mode production",
+        "vscode:prepublish": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode production",
         "webpack": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode development",
         "webpack-dev": "webpack --mode development --watch",
         "test-compile": "tsc -p ./",

@@ -31,7 +31,7 @@
         "editorGutter.deletedBackground": "#e7e7e8",
         "editorGutter.modifiedBackground": "#e7e7e8",
         "editorIndentGuide.background": "#ffffff",
-        "editorLineNumber.foreground": "#b7b7ba",
+        "editorLineNumber.foreground": "#c3c3c6",
         "editorRuler.foreground": "#b7b7ba",
         "editorWhitespace.foreground": "#cceafc",
         "editorWidget.background": "#ffffff",

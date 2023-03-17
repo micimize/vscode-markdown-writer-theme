@@ -1,127 +1,127 @@
 {
-	"name": "markdown-writer-theme",
-	"displayName": "Markdown Writer Theme",
-	"description": "Minimalist themes for writing markdown",
-	"version": "0.1.11",
-	"publisher": "mgmeyers",
-	"repository": {
-		"url": "https://github.com/mgmeyers/vscode-markdown-writer-theme.git",
-		"type": "git"
-	},
-	"license": "MIT",
-	"engines": {
-		"vscode": "^1.49.0"
-	},
-	"categories": [
-		"Themes"
-	],
-	"activationEvents": [
-		"*",
-		"onCommand:markdown-writer-theme.update"
-	],
-	"main": "./dist/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"category": "Markdown Writer Theme",
-				"command": "markdown-writer-theme.update",
-				"title": "Regenerate Themes"
-			}
-		],
-		"languages": [
-			{
-				"id": "markdown-writer-theme"
-			}
-		],
-		"grammars": [
-			{
-				"language": "markdown-writer-theme",
-				"scopeName": "text.markdown.writer",
-				"path": "./syntaxes/markdownWriter.tmLanguage.json",
-				"injectTo": [
-					"text.html.markdown",
-					"text.html.markdown.jsx"
-				]
-			}
-		],
-		"themes": [
-			{
-				"label": "Markdown Writer - light",
-				"uiTheme": "vs",
-				"path": "./themes/Markdown Writer - light-color-theme.json",
-				"type": "light",
-				"_watch": true
-			},
-			{
-				"label": "Markdown Writer - dark",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Markdown Writer - dark-color-theme.json",
-				"type": "dark",
-				"_watch": true
-			}
-		],
-		"configuration": {
-			"title": "Markdown Note Factory Configuration",
-			"properties": {
-				"markdown-writer-theme.light.foregroundColor": {
-					"type": "string",
-					"default": "#0e101a",
-					"description": "Light theme foreground color."
-				},
-				"markdown-writer-theme.light.accentColor": {
-					"type": "string",
-					"default": "#0094f0",
-					"description": "Light theme accent color."
-				},
-				"markdown-writer-theme.light.backgroundColor": {
-					"type": "string",
-					"default": "#ffffff",
-					"description": "Light theme background color."
-				},
-				"markdown-writer-theme.dark.foregroundColor": {
-					"type": "string",
-					"default": "#b2cacd",
-					"description": "Dark theme foreground color."
-				},
-				"markdown-writer-theme.dark.accentColor": {
-					"type": "string",
-					"default": "#e4b781",
-					"description": "Dark theme accent color."
-				},
-				"markdown-writer-theme.dark.backgroundColor": {
-					"type": "string",
-					"default": "#052529",
-					"description": "Dark theme background color."
-				}
-			}
-		}
-	},
-	"scripts": {
-		"vscode:prepublish": "webpack --mode production",
-		"webpack": "webpack --mode development",
-		"webpack-dev": "webpack --mode development --watch",
-		"test-compile": "tsc -p ./",
-		"lint": "eslint src --ext ts"
-	},
-	"devDependencies": {
-		"@types/chroma-js": "^2.1.0",
-		"@types/glob": "^7.1.3",
-		"@types/mocha": "^8.0.0",
-		"@types/node": "^14.0.27",
-		"@types/vscode": "^1.49.0",
-		"@typescript-eslint/eslint-plugin": "^3.8.0",
-		"@typescript-eslint/parser": "^3.8.0",
-		"eslint": "^7.6.0",
-		"glob": "^7.1.6",
-		"mocha": "^8.1.3",
-		"ts-loader": "^8.0.4",
-		"typescript": "^4.0.2",
-		"vscode-test": "^1.4.0",
-		"webpack": "^4.44.2",
-		"webpack-cli": "^3.3.12"
-	},
-	"dependencies": {
-		"chroma-js": "^2.1.0",
-		"valid-web-color": "^1.0.1"
-	}
+    "name": "markdown-writer-theme",
+    "displayName": "Markdown Writer Theme",
+    "description": "Minimalist themes for writing markdown",
+    "version": "0.1.11",
+    "publisher": "mgmeyers",
+    "repository": {
+        "url": "https://github.com/mgmeyers/vscode-markdown-writer-theme.git",
+        "type": "git"
+    },
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.49.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "activationEvents": [
+        "*",
+        "onCommand:markdown-writer-theme.update"
+    ],
+    "main": "./dist/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "category": "Markdown Writer Theme",
+                "command": "markdown-writer-theme.update",
+                "title": "Regenerate Themes"
+            }
+        ],
+        "languages": [
+            {
+                "id": "markdown-writer-theme"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "markdown-writer-theme",
+                "scopeName": "text.markdown.writer",
+                "path": "./syntaxes/markdownWriter.tmLanguage.json",
+                "injectTo": [
+                    "text.html.markdown",
+                    "text.html.markdown.jsx"
+                ]
+            }
+        ],
+        "themes": [
+            {
+                "label": "Markdown Writer - light",
+                "uiTheme": "vs",
+                "path": "./themes/Markdown Writer - light-color-theme.json",
+                "type": "light",
+                "_watch": true
+            },
+            {
+                "label": "Markdown Writer - dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Markdown Writer - dark-color-theme.json",
+                "type": "dark",
+                "_watch": true
+            }
+        ],
+        "configuration": {
+            "title": "Markdown Note Factory Configuration",
+            "properties": {
+                "markdown-writer-theme.light.foregroundColor": {
+                    "type": "string",
+                    "default": "#0e101a",
+                    "description": "Light theme foreground color."
+                },
+                "markdown-writer-theme.light.accentColor": {
+                    "type": "string",
+                    "default": "#0094f0",
+                    "description": "Light theme accent color."
+                },
+                "markdown-writer-theme.light.backgroundColor": {
+                    "type": "string",
+                    "default": "#ffffff",
+                    "description": "Light theme background color."
+                },
+                "markdown-writer-theme.dark.foregroundColor": {
+                    "type": "string",
+                    "default": "#b2cacd",
+                    "description": "Dark theme foreground color."
+                },
+                "markdown-writer-theme.dark.accentColor": {
+                    "type": "string",
+                    "default": "#e4b781",
+                    "description": "Dark theme accent color."
+                },
+                "markdown-writer-theme.dark.backgroundColor": {
+                    "type": "string",
+                    "default": "#052529",
+                    "description": "Dark theme background color."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "webpack --mode production",
+        "webpack": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode development",
+        "webpack-dev": "webpack --mode development --watch",
+        "test-compile": "tsc -p ./",
+        "lint": "eslint src --ext ts"
+    },
+    "devDependencies": {
+        "@types/chroma-js": "^2.1.0",
+        "@types/glob": "^7.1.3",
+        "@types/mocha": "^8.0.0",
+        "@types/node": "^14.0.27",
+        "@types/vscode": "^1.49.0",
+        "@typescript-eslint/eslint-plugin": "^3.8.0",
+        "@typescript-eslint/parser": "^3.8.0",
+        "eslint": "^7.6.0",
+        "glob": "^7.1.6",
+        "mocha": "^8.1.3",
+        "ts-loader": "^8.0.4",
+        "typescript": "^4.0.2",
+        "vscode-test": "^1.4.0",
+        "webpack": "^4.44.2",
+        "webpack-cli": "^3.3.12"
+    },
+    "dependencies": {
+        "chroma-js": "^2.1.0",
+        "valid-web-color": "^1.0.1"
+    }
 }

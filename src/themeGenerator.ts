@@ -58,7 +58,7 @@ export function generateThemes(themeDir: string) {
                 'editor.inactiveSelectionBackground': getForeground(80),
                 'editor.lineHighlightBackground': getForeground(95),
                 'editor.rangeHighlightBackground': getAccent(80),
-                'editor.selectionBackground': getAccent(52),
+                'editor.selectionBackground': getAccent(70),
                 'editor.wordHighlightBackground': getAccent(90),
                 'editor.wordHighlightStrongBackground': getAccent(0),
                 'editorBracketMatch.background': getForeground(100),
@@ -91,6 +91,7 @@ export function generateThemes(themeDir: string) {
                 'panel.border': getForeground(90),
                 "peekViewResult.background": getForeground(97),
                 "peekViewTitle.background": getForeground(95),
+                "peekViewEditor.background": getForeground(97),
                 'peekViewEditor.matchHighlightBackground': getForeground(90),
                 'peekViewResult.matchHighlightBackground': getAccent(95),
                 'quickInput.background': getForeground(100),
@@ -121,7 +122,8 @@ export function generateThemes(themeDir: string) {
                 "terminal.ansiBrightWhite": getForeground(0),
                 "terminal.ansiWhite": getForeground(10),
 
-                focusBorder: getAccent(0),
+                focusBorder: getAccent(20),
+                "peekView.border": getAccent(20),
                 foreground: getForeground(30),
             },
             tokenColors: [

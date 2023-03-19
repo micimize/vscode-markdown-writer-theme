@@ -96,10 +96,10 @@
         }
     },
     "scripts": {
-        "vscode:prepublish": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode production",
+        "vscode:prepublish": "webpack --mode production",
         "vscode:install": "rm -f micimize-markdown-writer-theme-0.1.11.vsix && vsce package --no-yarn && code --install-extension micimize-markdown-writer-theme-0.1.11.vsix",
         "vscode:update": "npm run vscode:prepublish && npm run vscode:install",
-        "webpack": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode development",
+        "webpack": "webpack --mode development",
         "webpack-dev": "webpack --mode development --watch",
         "test-compile": "tsc -p ./",
         "lint": "eslint src --ext ts"

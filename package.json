@@ -15,9 +15,7 @@
     "categories": [
         "Themes"
     ],
-    "activationEvents": [
-        "onStartupFinished"
-    ],
+    "activationEvents": [],
     "main": "./dist/extension.js",
     "contributes": {
         "commands": [
